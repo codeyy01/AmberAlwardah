@@ -248,3 +248,49 @@ footer p {
   }
 }
 
+
+/* Phones in portrait (most common) */
+@media only screen and (max-width: 480px) {
+  .hero-section {
+        background-position: 81%;
+    }
+    #GM-i{
+        visibility: hidden;
+    }
+    #GM-n{
+        visibility: hidden;
+    }
+    #ph-i{
+        visibility: hidden;
+    }
+    #ph-n{
+        visibility: hidden;
+    }
+    #eh {
+        font-size: 17vw;
+        top: 44px;
+        left: 40px;
+    }
+    #eh span {
+    top: 80px;
+    }
+    #sp {
+        top: 25%;
+        left: 65%;
+    }
+    #main-nav h1 {
+        margin: -2px;
+    }
+    #ep {
+        font-size: 5vw;
+        left: 0px;
+        bottom: 3%;
+        letter-spacing: 0.5em;
+    }
+
+}
+
+/* Phones in landscape */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
