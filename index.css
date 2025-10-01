@@ -143,8 +143,13 @@ body{
 #sp{
     font-size: larger;
     position: absolute;
+<<<<<<< HEAD
     bottom: 46%;
     left: 43%;
+=======
+    bottom: 45%;
+    left: 45%;
+>>>>>>> a0e9a1a9ae94901c863ea000f03c5509b5b7002e
 }
 
 .gallery-section {
