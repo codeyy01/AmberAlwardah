@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="nav-container">
+            <h1>Amber Alwardah</h1>
+            <ul>
+            <!-- <li><a href="#main">Home</a></li> -->
+            <!-- <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li> -->
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="hero-section">
+            <p id="GM-n">MOHD JAMEEZ<span>General Manager</span></p>
+            <a href="https://instagram.com/yourpage" target="_blank"><i id="GM-i" class="fa-solid fa-user-tie"></i></a>
+
+            <p id="ph-n">+971 527617521</p>
+            <a href="https://instagram.com/yourpage" target="_blank"><i id="ph-i" class="fa-solid fa-square-phone"></i></a>
+
+            <h1 id="eh">Amber<br><span>Alwardah</span></h1>
+            <p id="ep">Dry Fruits Import & Export</p>
+
+            <!-- <h1 id="ah">آمبر الوردة</h1>
+            <p id="ap">استيراد وتصدير الفواكه المجففة</p> -->
+            <p id="sp">Since 2023</p>
+        </div>
+    </div>
+    <section class="gallery-section">
+    <h2>A Connoisseur's Choice</h2>
+        <div class="gallery">
+            <img src="images/dates.png" alt="Dry Fruit 1">
+            <img src="images/pistachioo.png" alt="Dry Fruit 2">
+            <img src="images/almonds.png" alt="Dry Fruit 3">
+            <img src="images/cashew.png" alt="Dry Fruit 4">
+        </div>
+    </section>
+
+    <footer id="contact">
+  <div class="footer-container">
+    <h2>Contact Us</h2>
+    <h4><strong>General Manager:</strong> Mohd Jameez</h4>
+
+    <div class="footer-grid">
+      <!-- Left side -->
+      <div class="cd">
+        <p><i class="fa-solid fa-phone"></i> +971 0508729675</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +971 0566061334</p>
+        <p><i class="fa-solid fa-envelope"></i> jameezahmed@gmail.com</p>
+      </div>
+
+      <!-- Right side -->
+      <div class="location">
+        <p><i class="fa-solid fa-location-dot"></i> TOUFIQ G BUILDING,<br> Office no: 303,<br> AL RAS, DUBAI</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const nav = document.getElementById("main-nav");
+            if (window.scrollY > 250) { 
+            // Show when scrolled down 50px
+            nav.classList.add("nav-scrolled");
+            } else {
+            // Hide when at the very top
+            nav.classList.remove("nav-scrolled");
+            }
+        });
+</script>
+</body>
+</html>

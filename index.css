@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Jaini+Purva&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Jaini+Purva&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(210, 180, 140, 0.95);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+    /* hidden state */
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out, opacity 0.4s ease-out;
+}
+
+/* visible state */
+#main-nav.nav-scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* flex container for logo + menu */
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* brand */
+#main-nav h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem; /* better than vw for readability */
+    margin: 0;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+/* nav links */
+#main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+#main-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.hero-section {
+    height: 100vh; /* full screen height */
+    background-image: url(images/pexels-andreea-ch-371539-3969099.jpg);
+    background-size: cover;      /* fills the area */
+    background-position: center 35%; /* centers the subject */
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: "Averia Serif Libre", serif;
+    text-align: center;
+    user-select: none;
+}
+
+
+#GM-i{
+    color: rgba(18, 67, 4, 1);
+    font-size: 2em;
+    position: absolute;
+    top: 5%;
+    right: 11%;
+}
+
+#GM-n{
+    color: rgb(13, 46, 3);
+    font-size: 1em;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+
+#ph-i{
+    color: rgba(18, 67, 4, 1);
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    right: 11%;
+}
+
+#ph-n{
+    color: rgb(13, 46, 3);
+    font-size: 1.1em;
+    position: absolute;
+    top: 9%;
+    right: 5%;
+}
+
+#GM-n span{
+    color: rgba(18, 67, 4, 1);
+    font-size: 0.7em;
+    position: absolute;
+    top: 75%;
+    right: 25%;
+}
+
+#eh{
+    font-size: 10vw;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: rgba(18, 67, 4, 1);
+}
+#eh span{
+    top: 185px;
+    position: absolute;
+    left: 0;
+}
+
+#ep{
+    font-size: 2vw;
+    position: absolute;
+    left: 70px;
+    bottom: 10%;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.4em;
+}
+
+#sp{
+    font-size: larger;
+    position: absolute;
+    bottom: 46%;
+    left: 45%;
+}
+
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    user-select: none;
+}
+
+.gallery-section h2 {
+    font-family: 'Averia Serif Libre', serif;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #124304; /* matches brand green */
+    user-select: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    user-select: none;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+  background-color: #d1cde5;
+  color: #000000;
+  padding: 20px 30px;
+  user-select: none;
+}
+
+footer h2 {
+  font-family: 'Averia Serif Libre', serif;
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 10px 0;
+}
+
+footer h4 {
+  font-family: 'Averia Serif Libre', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+}
+
+footer i{
+    margin-right: 10px;
+}
+
+footer p {
+  font-size: 1.9rem;
+  margin: 8px 0;
+}
+
+/* Flexbox container for call + location */
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Left side */
+.cd {
+  flex: 1;
+  text-align: left;
+}
+
+/* Right side */
+.location {
+  flex: 1;
+  text-align: right;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cd, .location {
+    text-align: center;
+  }
+}
+
