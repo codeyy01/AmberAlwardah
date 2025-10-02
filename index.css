@@ -254,10 +254,7 @@ footer p {
 
 @media only screen and (max-width: 770px) {
     #eh{
-        margin-top: 50%;
-    }
-    .yellow-box{
-        visibility: visible;
+        margin-top: 10%;
     }
     .grey-box {
         position: absolute;
@@ -266,14 +263,15 @@ footer p {
         letter-spacing: 0.1em; /* Reduce the spacing between letters */
         text-align: center;    /* Center the text within its column */
     }
+    
+    #sp {
+        bottom: 16%;
+        font-size: 1.3em;
+        margin-left: 63%;
+    }
     #ep{
         font-size: 1em;
     }
-    #sp {
-        bottom: -1%;
-        font-size: 1em;
-    }
-    
     .hero-section{
         background-position: 80%;
     }
@@ -322,13 +320,14 @@ footer p {
         visibility: hidden;
     }
     #eh{
-        margin-top: 30%;
+        margin-top: 10%;
     }
     #ep{
+        transform: translateY(-500px);
         font-size: 0.8em;
     }
     #sp {
-        bottom: 5%;
+        top: 55%;
         font-size: 1.4em;
         margin-left: 53%;
     }
