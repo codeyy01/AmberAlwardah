@@ -68,7 +68,7 @@ body{
 .hero-section {
     height: 100vh; /* full screen height */
     background-image: url(images/pexels-andreea-ch-371539-3969099.jpg);
-    background-size: cover;      /* fills the area */
+    background-size: cover ;      /* fills the area */
     background-position: center 35%; /* centers the subject */
     background-repeat: no-repeat;
     display: flex;
@@ -129,16 +129,24 @@ body{
     font-size: 2em;
 }
 
-.green-box p{
-    margin-left: 70%;
+#sp{
+    position: absolute;
+    bottom: 1%;
+    margin-left: 67%;
     margin-block-start: 0;
+    font-size: 0.9vw;
 }
 
 .grey-box{
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    font-weight: 100;
+    text-align: start;
+    
 } 
+
+#ep{
+    font-size: 3em;
+    letter-spacing: 0.4em;
+    font-weight: 300;
+}
 
 .gallery-section {
     padding: 60px 20px;
@@ -165,8 +173,8 @@ body{
 }
 
 .gallery img {
-    width: 100%;
-    height: 220px;
+    width: 50%;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -248,8 +256,8 @@ footer p {
     #eh{
         margin-top: 50%;
     }
-    .hero-section{
-        background-position: center 90%;
+    .yellow-box{
+        visibility: visible;
     }
     .grey-box {
         position: absolute;
@@ -258,8 +266,24 @@ footer p {
         letter-spacing: 0.1em; /* Reduce the spacing between letters */
         text-align: center;    /* Center the text within its column */
     }
+    #ep{
+        font-size: 1em;
+    }
+    #sp {
+        bottom: -1%;
+        font-size: 1em;
+    }
+    
     .hero-section{
         background-position: 80%;
+    }
+    .gallery{
+        max-width: 480px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .gallery img{
+        width: 100%;
     }
     .footer-grid {
         /* Stack the columns on top of each other */
@@ -286,12 +310,27 @@ footer p {
     }
 }
 
+
 @media only screen and (max-width: 440px) {
+    #main-nav.nav-scrolled {
+        height: fit-content;
+    }
+    .hero-section{
+        background-position: 80% ;
+    }
+    .yellow-box{
+        visibility: hidden;
+    }
     #eh{
         margin-top: 30%;
     }
-    #main-nav{
-        opacity: 1;
+    #ep{
+        font-size: 0.8em;
+    }
+    #sp {
+        bottom: 5%;
+        font-size: 1.4em;
+        margin-left: 53%;
     }
     .footer-grid {
         /* Stack the columns on top of each other */
@@ -302,7 +341,7 @@ footer p {
         text-align: center;
         gap: 20px;
     }
-
+    
     /* Make both columns center their text */
     .cd, .location {
         text-align: center;
@@ -316,4 +355,5 @@ footer p {
     footer p {
         font-size: 1.1rem;
     }
+    
 }
