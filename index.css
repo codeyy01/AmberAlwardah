@@ -77,75 +77,68 @@ body{
     user-select: none;
 }
 
+.green-box {
+    min-height: 300px;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    text-align: start;
+}
+
+.yellow-box {
+    border-radius: 15px; /* Rounded corners */
+    min-height: 80px;
+    margin-top: 10%;
+    text-align: center
+}
+
+.grey-box {
+    min-height: 100%;
+}
+
+#eh{
+    color: rgba(18, 67, 4, 1);
+    font-size: 14.5rem;
+    line-height: 85%;
+}
+
+#eh span{
+    margin-right: 25%;
+}
+
+.gm{
+    margin-left: 50%;
+}
+
+.ph{
+    margin-left: 50%;
+}
+
 
 #GM-i{
     color: rgba(18, 67, 4, 1);
     font-size: 2em;
-    position: absolute;
-    top: 5%;
-    right: 11%;
 }
 
-#GM-n{
-    color: rgb(13, 46, 3);
-    font-size: 1em;
-    position: absolute;
-    top: 4%;
-    right: 3.5%;
+#GM-i{
+    color: rgba(18, 67, 4, 1);
+    font-size: 2em;
 }
 
 #ph-i{
     color: rgba(18, 67, 4, 1);
     font-size: 2em;
-    position: absolute;
-    top: 10%;
-    right: 11%;
 }
 
-#ph-n{
-    color: rgb(13, 46, 3);
-    font-size: 1.1em;
-    position: absolute;
-    top: 9%;
-    right: 3.5%;
+.green-box p{
+    margin-left: 70%;
+    margin-block-start: 0;
 }
 
-#GM-n span{
-    color: rgba(18, 67, 4, 1);
-    font-size: 0.7em;
-    position: absolute;
-    top: 75%;
-    right: 25%;
-}
-
-#eh{
-    font-size: 10vw;
-    position: absolute;
-    top: 20px;
-    left: 70px;
-    color: rgba(18, 67, 4, 1);
-}
-#eh span{
-    top: 185px;
-    position: absolute;
-    left: 0;
-}
-
-#ep{
-    font-size: 2vw;
-    position: absolute;
-    left: 70px;
-    bottom: 10%;
-    color: rgb(0, 0, 0);
-    letter-spacing: 0.4em;
-}
-
-#sp{
-    font-size: larger;
-    position: absolute;
-    bottom: 44%;
-    left: 44%;
-}
+.grey-box{
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    font-weight: 100;
+} 
 
 .gallery-section {
     padding: 60px 20px;
@@ -237,60 +230,37 @@ footer p {
   text-align: right;
 }
 
-/* Responsive for small screens */
-@media (max-width: 768px) {
-  .footer-grid {
-    flex-direction: column;
-    text-align: center;
-  }
-  .cd, .location {
-    text-align: center;
-  }
+
+@media only screen and (max-width: 1300px) {
+    .yellow-box{
+        visibility: hidden;
+    }
+    
 }
 
+@media only screen and (max-width: 1100px) {
+    #eh{
+        font-size: 10em;
+    }
+    .hero-section{
+        background-position: center 90%;
+    }
+}
 
-/* Phones in portrait (most common) */
-@media only screen and (max-width: 480px) {
-  .hero-section {
-        background-position: 81%;
+@media only screen and (max-width: 770px) {
+    #eh{
+        margin-top: 10%;
+        font-size: 6em;
     }
-    #GM-i{
-        visibility: hidden;
+    .hero-section{
+        background-position: center 90%;
     }
-    #GM-n{
-        visibility: hidden;
-    }
-    #ph-i{
-        visibility: hidden;
-    }
-    #ph-n{
-        visibility: hidden;
-    }
-    #eh {
-        font-size: 17vw;
-        top: 44px;
-        left: 40px;
-    }
-    #eh span {
-    top: 80px;
-    }
-    #sp {
-        top: 25%;
-        left: 65%;
-    }
-    #main-nav h1 {
-        margin: -2px;
-    }
-    #ep {
-        font-size: 5vw;
-        left: 0px;
-        bottom: 3%;
-        letter-spacing: 0.5em;
+}
+
+@media only screen and (max-width: 440px) {
+    #eh{
+        margin-top: 10%;
+        font-size: 4.5em;
     }
 
 }
-
-/* Phones in landscape */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-}
-
