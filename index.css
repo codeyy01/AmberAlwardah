@@ -97,7 +97,7 @@ body{
 
 #eh{
     color: rgba(18, 67, 4, 1);
-    font-size: 14.5rem;
+    font-size: clamp(4.5rem, 12vw, 14.5rem);
     line-height: 85%;
 }
 
@@ -136,7 +136,7 @@ body{
 
 .grey-box{
     font-size: 3em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     font-weight: 100;
 } 
 
@@ -239,28 +239,82 @@ footer p {
 }
 
 @media only screen and (max-width: 1100px) {
-    #eh{
-        font-size: 10em;
-    }
     .hero-section{
-        background-position: center 90%;
+        background-position: 90%;
     }
 }
 
 @media only screen and (max-width: 770px) {
     #eh{
-        margin-top: 10%;
-        font-size: 6em;
+        margin-top: 50%;
     }
     .hero-section{
         background-position: center 90%;
+    }
+    .grey-box {
+        position: absolute;
+        top: 85%;
+        font-size: 2em;      /* Make the font much smaller */
+        letter-spacing: 0.1em; /* Reduce the spacing between letters */
+        text-align: center;    /* Center the text within its column */
+    }
+    .hero-section{
+        background-position: 80%;
+    }
+    .footer-grid {
+        /* Stack the columns on top of each other */
+        flex-direction: column;
+        
+        /* Adjust alignment for a stacked layout */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Make both columns center their text */
+    .cd, .location {
+        text-align: center;
+    }
+
+    /* Reduce font sizes for better readability on mobile */
+    footer h2 {
+        font-size: 2.2rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
     }
 }
 
 @media only screen and (max-width: 440px) {
     #eh{
-        margin-top: 10%;
-        font-size: 4.5em;
+        margin-top: 30%;
+    }
+    #main-nav{
+        opacity: 1;
+    }
+    .footer-grid {
+        /* Stack the columns on top of each other */
+        flex-direction: column;
+        
+        /* Adjust alignment for a stacked layout */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Make both columns center their text */
+    .cd, .location {
+        text-align: center;
+    }
+
+    /* Reduce font sizes for better readability on mobile */
+    footer h2 {
+        font-size: 2.2rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
     }
 
 }
