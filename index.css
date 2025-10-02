@@ -7,7 +7,7 @@ body{
 }
 
 .mt-5 {
-    margin-top: 1rem!important;
+    margin-top: 1rem;
 }
 
 #main-nav {
@@ -147,7 +147,7 @@ body{
 } 
 
 #ep{
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 0.4em;
     font-weight: 300;
 }
