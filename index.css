@@ -79,6 +79,7 @@ body{
     font-family: "Averia Serif Libre", serif;
     text-align: center;
     user-select: none;
+    position: relative;
 }
 
 .green-box {
@@ -109,28 +110,8 @@ body{
     margin-right: 25%;
 }
 
-.gm{
-    margin-left: 50%;
-}
-
-.ph{
-    margin-left: 50%;
-}
-
-
-#GM-i{
-    color: rgba(18, 67, 4, 1);
-    font-size: 2em;
-}
-
-#GM-i{
-    color: rgba(18, 67, 4, 1);
-    font-size: 2em;
-}
-
-#ph-i{
-    color: rgba(18, 67, 4, 1);
-    font-size: 2em;
+.hero-logo{
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
 }
 
 #sp{
@@ -222,25 +203,50 @@ footer p {
 
 /* Flexbox container for call + location */
 .footer-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 100%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+  gap: 40%;                      /* Adds space between the columns */
+  margin-top: 30px;                 /* Adds space below the "Contact Us" title */
+  align-items: end;               /* Aligns items to the top of their column */
 }
-
 /* Left side */
 .cd {
   flex: 1;
   text-align: left;
 }
 
-/* Right side */
-.location {
-  flex: 1;
-  text-align: right;
+.contact-line {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center; /* Vertically aligns icons and text */
+    margin-bottom: 15px; /* Space between each line */
 }
+
+.contact-line a {
+    color: inherit; /* Makes links use the parent text color */
+    text-decoration: none; /* Removes the underline from links */
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-line i {
+    font-size: 1.6rem; /* Makes icons a bit larger */
+    margin-right: 12px;
+    width: 20px; /* Gives icons a consistent space */
+    text-align: center;
+}
+
+.contact-line .contact-text {
+    margin-left: 10px;
+    line-height: 1.6;
+}
+
+/* Removes left margin for the location text which doesn't have multiple icons */
+.location .contact-text {
+    margin-left: 0;
+}
+
+
 
 
 @media only screen and (max-width: 1300px) {
@@ -253,6 +259,9 @@ footer p {
 @media only screen and (max-width: 1100px) {
     .hero-section{
         background-position: 90%;
+    }
+    #ep {
+        font-size: 1.4em;
     }
 }
 
@@ -268,6 +277,7 @@ footer p {
         text-align: center;    /* Center the text within its column */
     }
     
+    
     #sp {
         bottom: 16%;
         font-size: 1.3em;
@@ -279,6 +289,17 @@ footer p {
     .hero-section{
         background-position: 80%;
     }
+    .hero-logo {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 300px;
+        z-index: 10;
+    }
+    .hero-logo img {
+        width: 100%;
+        height: auto;
+    }
     .gallery{
         max-width: 480px;
         grid-template-columns: repeat(2,1fr);
@@ -288,13 +309,14 @@ footer p {
         width: 100%;
     }
     .footer-grid {
-        /* Stack the columns on top of each other */
-        flex-direction: column;
-        
-        /* Adjust alignment for a stacked layout */
-        align-items: center;
-        text-align: center;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Stack the items vertically */
+        text-align: center;         /* Center the text on mobile */
+        gap: 0%;
+    }
+
+  /* Justify the content inside each line to the center */
+  .contact-line {
+        justify-content: center;
     }
 
     /* Make both columns center their text */
@@ -317,6 +339,9 @@ footer p {
     #main-nav.nav-scrolled {
         height: fit-content;
     }
+    #main-nav h1{
+        font-size: 2.7em;
+    }
     .hero-section{
         background-position: 80% ;
     }
@@ -335,14 +360,26 @@ footer p {
         font-size: 1.4em;
         margin-left: 53%;
     }
+    .hero-logo {
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        width: 195px;
+        z-index: 10;
+    }
+    .hero-logo img {
+        width: 100%;
+        height: auto;
+    }
     .footer-grid {
-        /* Stack the columns on top of each other */
-        flex-direction: column;
-        
-        /* Adjust alignment for a stacked layout */
-        align-items: center;
-        text-align: center;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Stack the items vertically */
+        text-align: center;         /* Center the text on mobile */
+        gap: 0%;
+    }
+
+  /* Justify the content inside each line to the center */
+  .contact-line {
+        justify-content: center;
     }
     
     /* Make both columns center their text */
@@ -363,6 +400,12 @@ footer p {
 
 @media only screen and (max-width: 400px){
     #ep{
+        display: none;
+    }
+    .hero-logo{
+        display: none;
+    }
+    #main-nav{
         display: none;
     }
 }
