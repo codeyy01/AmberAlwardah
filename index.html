@@ -1,158 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber Alwardah</title>
+    <title>Amber Alwardah - Premium Dry Fruits Import & Export | Dubai</title>
+    <meta name="color-scheme" content="light">
+    <meta name="description"
+        content="Amber Alwardah - Premium dry fruits import and export company based in Dubai, UAE. Specializing in dates, pistachios, almonds, cashews, and walnuts.">
     <link rel="icon" type="image/png" href="images/amberAlwardahLogo-bgless.png">
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <!-- Swiper.js for mobile text slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
-    <nav id="main-nav">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <h1>Amber Alwardah</h1>
-            <ul>
-            <!-- <li><a href="#main">Home</a></li> -->
-            <!-- <li><a href="#products">Products</a></li>
-            <li><a href="#about">About</a></li> -->
-            <!-- <li><a href="#contact">Contact</a></li> -->
+            <div class="nav-brand">
+                <img src="images/amberAlwardahLogo-bgless.png" alt="Amber Alwardah Logo">
+                <span class="brand-name">Amber Alwardah</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="main container-fluid">
-        <div class="row hero-section">
-
-            <div class="col-sm-12 col-md-8 col-12">
-                
-                <div class="green-box p-3">
-                    <h1 id="eh"><span>Amber</span><br>Alwardah</h1>
-                    <p id="sp">Since 2023</p>
-                </div>
-
-                <div class="grey-box p-3 mt-4">
-                    <p id="ep" >Dry Fruits Import & Export</p>
-                </div>
-
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <!-- Logo at top -->
+            <div class="hero-logo">
+                <img src="images/amberAlwardahLogo-bgless.png" alt="Amber Alwardah">
             </div>
 
-            <div class="col-sm-12 col-md-4 col-12 ">
-                <a href="index.html" class="hero-logo">
-                    <img src="images/amberAlwardahLogo-bgless.png" alt="Amber Alwardah Logo" class="img-fluid">
-                </a>
-            </div>
+            <!-- Split content area -->
+            <div class="hero-split">
+                <!-- Brand name - centered -->
+                <div class="hero-brand-wrapper">
+                    <h1><span class="brand-line">Amber</span><br><span class="brand-line">Alwardah</span></h1>
+                </div>
 
+                <!-- Bottom content -->
+                <div class="hero-bottom">
+                    <p class="hero-subtitle">Premium Dry Fruits Import &amp; Export</p>
+                    <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Dubai, UAE | Est. 2023</p>
+                    <a href="#contact" class="btn-primary">Contact for Business Inquiries</a>
+                </div>
+            </div>
         </div>
-    </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
 
-    <section class="gallery-section">
-    <h2>A Connoisseur's Choice</h2>
-        <div class="gallery">
-            <img src="images/dates.png" alt="Dry Fruit 1">
-            <img src="images/pistachioo.png" alt="Dry Fruit 2">
-            <img src="images/almonds.png" alt="Dry Fruit 3">
-            <img src="images/cashew.png" alt="Dry Fruit 4">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Company</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Mobile Only: Text Slider -->
+            <div class="about-mobile-slider">
+                <div class="swiper about-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="text-card">
+                                <div class="card-icon"><i class="fas fa-building"></i></div>
+                                <h4>Who We Are</h4>
+                                <p>Amber Alwardah is a premier import and export company based in Dubai, UAE. We
+                                    specialize in sourcing and distributing the finest quality dry fruits from around
+                                    the world.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="text-card">
+                                <div class="card-icon"><i class="fas fa-award"></i></div>
+                                <h4>Our Commitment</h4>
+                                <p>Our commitment to excellence ensures that every product meets the highest standards
+                                    of quality and freshness. We work directly with trusted suppliers to bring you
+                                    premium dry fruits for your business needs.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="text-card">
+                                <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                                <h4>Product Range</h4>
+                                <p>From premium almonds and cashews to exotic dates and figs, our diverse product range
+                                    caters to every business need. Each product is carefully selected, tested for
+                                    quality, and delivered with the freshness your customers deserve.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination Dots -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- Row 1: Text Left, Image Right (Desktop shows both paragraphs here) -->
+            <div class="about-row">
+                <div class="about-text">
+                    <h3>Quality Import & Export Since 2023</h3>
+                    <p>Amber Alwardah is a premier import and export company based in Dubai, UAE. We specialize in
+                        sourcing and distributing the finest quality dry fruits from around the world.</p>
+                    <p class="desktop-only">Our commitment to excellence ensures that every product meets the highest
+                        standards of quality
+                        and freshness. We work directly with trusted suppliers to bring you premium dry fruits for your
+                        business needs.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/s4-bgless.png" alt="Premium Dry Fruits">
+                </div>
+            </div>
+
+            <!-- Row 2: Image Left, Text Right -->
+            <div class="about-row reverse">
+                <div class="about-image">
+                    <img src="images/s3-bgless.png" alt="Quality Nuts">
+                </div>
+                <div class="about-text">
+                    <p>Our commitment to excellence ensures that every product meets the highest standards of quality
+                        and freshness. We work directly with trusted suppliers to bring you premium dry fruits for your
+                        business needs.</p>
+                </div>
+            </div>
+
+            <!-- Features Row -->
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <span>Global Sourcing</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-certificate"></i>
+                    <span>Quality Assured</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Reliable Delivery</span>
+                </div>
+            </div>
         </div>
     </section>
 
-   
-
-    <section id="about" class="py-5 bg-light" style="user-select: none;">
+    <!-- Products Section - Redesigned -->
+    <section id="products" class="products-new">
         <div class="container">
+            <div class="section-header">
+                <h2>Our Product Range</h2>
+                <div class="divider"></div>
+                <p class="section-desc">Premium dry fruits sourced from the finest regions worldwide</p>
+            </div>
 
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="images/s4-bgless.png" class="img-fluid rounded " style="width: 100%;" alt="A beautiful bowl of mixed premium nuts">
+            <!-- Auto-scrolling Product Rows -->
+            <div class="product-showcase">
+                <!-- Row 1 - Scroll Left -->
+                <div class="product-row scroll-left">
+                    <div class="product-track">
+                        <img src="productRangeImg/s2-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s3-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s4-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s6-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s7-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 1 -->
+                        <img src="productRangeImg/s2-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s3-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s4-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s6-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s7-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 2 -->
+                        <img src="productRangeImg/s2-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s3-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s4-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s6-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s7-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 3 -->
+                        <img src="productRangeImg/s2-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s3-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s4-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s6-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s7-bgless.webp" alt="Dry Fruit">
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="display-5 fw-bold">About Amber Alwardah</h2>
-                    <h4 class="text-muted mb-4">A Connoisseur's Choice</h4>
-                    <p>Established in 2023, Amber Alwardah is a premier import and export company based in the vibrant heart of Dubai. Our journey began with a simple passion: to source the world's finest quality dry fruits and share them with customers who appreciate exceptional taste and wholesome goodness.</p>
-                    <p>Our curated selection focuses on the most sought-after natural treasures, including cashews, nutrient-rich almonds, vibrant pistachios, hearty walnuts and more. We believe that quality is paramount, which is why every product in our collection is carefully selected to ensure it meets our high standards for flavor and freshness.</p>
+
+                <!-- Row 2 - Scroll Right -->
+                <div class="product-row scroll-right">
+                    <div class="product-track">
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s9-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s10-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s11-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s12-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 1 -->
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s9-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s10-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s11-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s12-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 2 -->
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s9-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s10-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s11-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s12-bgless.webp" alt="Dry Fruit">
+                        <!-- Repeat 3 -->
+                        <img src="productRangeImg/s5-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s9-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s10-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s11-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s12-bgless.webp" alt="Dry Fruit">
+                    </div>
+                </div>
+
+                <!-- Row 3 - Scroll Left -->
+                <div class="product-row scroll-left">
+                    <div class="product-track">
+                        <img src="productRangeImg/s13-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s14-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s15-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s16-bgless.png" alt="Dry Fruit">
+                        <img src="productRangeImg/s17-bgless.png" alt="Dry Fruit">
+                        <!-- Repeat 1 -->
+                        <img src="productRangeImg/s13-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s14-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s15-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s16-bgless.png" alt="Dry Fruit">
+                        <img src="productRangeImg/s17-bgless.png" alt="Dry Fruit">
+                        <!-- Repeat 2 -->
+                        <img src="productRangeImg/s13-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s14-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s15-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s16-bgless.png" alt="Dry Fruit">
+                        <img src="productRangeImg/s17-bgless.png" alt="Dry Fruit">
+                        <!-- Repeat 3 -->
+                        <img src="productRangeImg/s13-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s14-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s15-bgless.webp" alt="Dry Fruit">
+                        <img src="productRangeImg/s16-bgless.png" alt="Dry Fruit">
+                        <img src="productRangeImg/s17-bgless.png" alt="Dry Fruit">
+                    </div>
                 </div>
             </div>
 
-            <div class="row col-12 d-md-none">
-                    <img src="images/s2-bgless.png" class="img-fluid rounded" alt="Nuts">
+            <!-- Bottom Tagline & CTA -->
+            <div class="product-footer">
+                <p class="product-tagline">100+ varieties of premium nuts, dried fruits & seeds</p>
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="divider"></div>
+                <p class="section-desc">Ready to discuss your business needs? Contact us today</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/971508729675" class="contact-link">+971 508729675</a>
+                    <a href="https://wa.me/971566061334" class="contact-link">+971 566061334</a>
                 </div>
 
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="display-5 fw-bold">The Goodness of Nature</h2>
-                    <h4 class="text-muted mb-4">Power-Packed in Every Bite</h4>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <strong class="text-success fs-5">Almonds:</strong> Praised for their heart-healthy fats, almonds are also a fantastic source of Vitamin E and protein, making them perfect for maintaining energy and glowing skin.
-                        </li>
-                        <li class="mb-3">
-                            <strong class="text-success fs-5">Walnuts:</strong> Often called "brain food," walnuts are uniquely rich in Omega-3 fatty acids, which are essential for cognitive function and reducing inflammation.
-                        </li>
-                        <li class="mb-3">
-                            <strong class="text-success fs-5">Pistachios:</strong> These vibrant nuts are packed with antioxidants, fiber, and protein, making them a satisfying, lower-calorie option that supports good gut health.
-                        </li>
-                        <li>
-                            <strong class="text-success fs-5">Cashews:</strong> Known for their creamy texture, cashews are an excellent source of essential minerals like iron and magnesium, vital for energy production and bone health.
-                        </li>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:amberalwardah@gmail.com" class="contact-link">amberalwardah@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office Address</h3>
+                    <p class="contact-address">
+                        TOUFIQ G BUILDING<br>
+                        Office no: 303<br>
+                        AL RAS, DUBAI, UAE
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <p class="contact-hours">
+                        Saturday - Thursday<br>
+                        9:00 AM - 6:00 PM<br>
+                        <span class="closed">Friday: Closed</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/amberAlwardahLogo-bgless.png" alt="Amber Alwardah">
+                    </div>
+                    <p class="footer-desc">Premium dry fruits import & export company based in Dubai, UAE.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="images/s2-bgless.png" class="img-fluid rounded" alt="Nuts">
+
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +971 508729675</li>
+                        <li><i class="fas fa-envelope"></i> amberalwardah@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                    </ul>
                 </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023-2025 Amber Alwardah. All Rights Reserved.</p>
+                <p class="footer-tagline">Established 2023 • Dubai, UAE</p>
             </div>
         </div>
-</section>
+    </footer>
 
- <footer id="contact">
-    <div class="footer-container">
-        <h2>Contact Us</h2>
-        <div class="footer-grid">
-
-             <div class="cd">
-                <div class="contact-line">
-                    <i class="fa-solid fa-phone"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href="https://wa.me/971508729675" class="contact-text">+971 508729675</a>
-                </div>
-
-                <div class="contact-line">
-                    <i class="fa-solid fa-phone"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a href="https://wa.me/971566061334" class="contact-text">+971 566061334</a>
-                </div>
-
-                <div class="contact-line">
-                    <a href="mailto:amberalwardah@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="mailto:amberalwardah@gmail.com" class="contact-text">amberalwardah@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="location">
-                <div class="contact-line">
-                     <i class="fa-solid fa-location-dot"></i>
-                     <p class="contact-text">TOUFIQ G BUILDING,<br> Office no: 303, AL RAS, DUBAI</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
+    <!-- Navbar Scroll Script -->
     <script>
-        window.addEventListener("scroll", function() {
-            const nav = document.getElementById("main-nav");
-            if (window.scrollY > 150) { 
-            // Show when scrolled down 50px
-            nav.classList.add("nav-scrolled");
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            const heroSection = document.getElementById('home');
+            const heroLogo = heroSection.querySelector('.hero-logo');
+
+            // Get the bottom position of the hero logo
+            const logoBottom = heroLogo.getBoundingClientRect().bottom;
+
+            // When the hero logo scrolls out of view, show navbar brand
+            if (logoBottom < 80) {
+                navbar.classList.add('scrolled');
             } else {
-            // Hide when at the very top
-            nav.classList.remove("nav-scrolled");
+                navbar.classList.remove('scrolled');
             }
         });
-</script>
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Swiper.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize About Section Swiper -->
+    <script>
+        // Only initialize on mobile screens
+        if (window.innerWidth <= 768) {
+            const aboutSwiper = new Swiper('.about-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
+
+        // Re-initialize on resize
+        window.addEventListener('resize', function () {
+            if (window.innerWidth <= 768) {
+                if (!document.querySelector('.about-swiper').swiper) {
+                    new Swiper('.about-swiper', {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        loop: true,
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                }
+            }
+        });
+    </script>
+
 </body>
+
 </html>
