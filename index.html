@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Swiper.js for mobile text slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,12 +50,12 @@
             <!-- Split content area -->
             <div class="hero-split">
                 <!-- Brand name - centered -->
-                <div class="hero-brand-wrapper">
+                <div class="hero-brand-wrapper" data-aos="fade-up" data-aos-duration="1000">
                     <h1><span class="brand-line">Amber</span><br><span class="brand-line">Alwardah</span></h1>
                 </div>
 
                 <!-- Bottom content -->
-                <div class="hero-bottom">
+                <div class="hero-bottom" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <p class="hero-subtitle">Premium Dry Fruits Import &amp; Export</p>
                     <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Dubai, UAE | Est. 2023</p>
                     <a href="#contact" class="btn-primary">Contact for Business Inquiries</a>
@@ -68,7 +70,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>About Our Company</h2>
                 <div class="divider"></div>
             </div>
@@ -115,7 +117,7 @@
 
             <!-- Row 1: Text Left, Image Right (Desktop shows both paragraphs here) -->
             <div class="about-row">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-right">
                     <h3>Quality Import & Export Since 2023</h3>
                     <p>Amber Alwardah is a premier import and export company based in Dubai, UAE. We specialize in
                         sourcing and distributing the finest quality dry fruits from around the world.</p>
@@ -124,7 +126,7 @@
                         and freshness. We work directly with trusted suppliers to bring you premium dry fruits for your
                         business needs.</p>
                 </div>
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-left">
                     <img src="images/s4-bgless.png" alt="Premium Dry Fruits">
                 </div>
             </div>
@@ -143,15 +145,15 @@
 
             <!-- Features Row -->
             <div class="about-features">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="0">
                     <i class="fas fa-globe"></i>
                     <span>Global Sourcing</span>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-certificate"></i>
                     <span>Quality Assured</span>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-shipping-fast"></i>
                     <span>Reliable Delivery</span>
                 </div>
@@ -162,14 +164,14 @@
     <!-- Products Section - Redesigned -->
     <section id="products" class="products-new">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Our Product Range</h2>
                 <div class="divider"></div>
                 <p class="section-desc">Premium dry fruits sourced from the finest regions worldwide</p>
             </div>
 
             <!-- Auto-scrolling Product Rows -->
-            <div class="product-showcase">
+            <div class="product-showcase" data-aos="fade-up" data-aos-delay="200">
                 <!-- Row 1 - Scroll Left -->
                 <div class="product-row scroll-left">
                     <div class="product-track">
@@ -274,13 +276,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2>Get in Touch</h2>
                 <div class="divider"></div>
                 <p class="section-desc">Ready to discuss your business needs? Contact us today</p>
             </div>
             <div class="contact-grid">
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="contact-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
@@ -289,7 +291,7 @@
                     <a href="https://wa.me/971566061334" class="contact-link">+971 566061334</a>
                 </div>
 
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -297,7 +299,7 @@
                     <a href="mailto:amberalwardah@gmail.com" class="contact-link">amberalwardah@gmail.com</a>
                 </div>
 
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -309,7 +311,7 @@
                     </p>
                 </div>
 
-                <div class="contact-card">
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="contact-icon">
                         <i class="fas fa-clock"></i>
                     </div>
@@ -328,14 +330,14 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
-                <div class="footer-column">
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="0">
                     <div class="footer-logo">
                         <img src="images/amberAlwardahLogo-bgless.png" alt="Amber Alwardah">
                     </div>
                     <p class="footer-desc">Premium dry fruits import & export company based in Dubai, UAE.</p>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
@@ -345,7 +347,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
                     <h4>Contact Info</h4>
                     <ul class="footer-contact">
                         <li><i class="fas fa-phone"></i> +971 508729675</li>
@@ -422,6 +424,16 @@
                     });
                 }
             }
+        });
+    </script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
         });
     </script>
 

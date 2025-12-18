@@ -163,6 +163,19 @@ a {
     height: 220px;
     margin: 0 auto;
     filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* Desktop Split Layout */
